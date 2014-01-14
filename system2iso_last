@@ -25,7 +25,7 @@ cecho (){
 if [[ $EUID -ne 0 ]]; then
 	cecho "Are you root?" $red 2>&1
 	echo 
-	cecho "Solution: run 'sudo system2iso_chroot'" $green
+	cecho "Solution: run 'sudo system2iso_last'" $green
 	echo
 	exit 1
 fi
