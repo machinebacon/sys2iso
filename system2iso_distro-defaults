@@ -4,7 +4,7 @@
 if [[ $EUID -ne 0 ]] ; then
 	echo "Are you root?" 2>&1
 	echo
-	echo "Solution: run 'sudo system2iso_chroot'"
+	echo "Solution: run 'sudo system2iso_distro-defaults'"
 	exit 1
 fi
 
@@ -19,7 +19,7 @@ if [ -d ${WORK} ]; then
 	sudo ncdu ${WORK}
 else
 	echo "No ${WORK} directory found, exiting."
-	echo "Solution: run 'system2iso' first."
+	echo "Solution: run 'sudo system2iso' first."
 	echo
 	exit 1
 fi
